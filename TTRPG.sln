@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DnD", "DnD\DnD.csproj", "{844502AB-C00E-4DEC-8603-AC780A5F16D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{B70BD1F1-B72C-4305-8E33-23164ACABB8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing", "Testing\Testing.csproj", "{B70BD1F1-B72C-4305-8E33-23164ACABB8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterTracker", "MonsterTracker\MonsterTracker.csproj", "{D2ADF17D-2254-470D-A959-3D481A98C841}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B70BD1F1-B72C-4305-8E33-23164ACABB8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B70BD1F1-B72C-4305-8E33-23164ACABB8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B70BD1F1-B72C-4305-8E33-23164ACABB8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2ADF17D-2254-470D-A959-3D481A98C841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2ADF17D-2254-470D-A959-3D481A98C841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2ADF17D-2254-470D-A959-3D481A98C841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2ADF17D-2254-470D-A959-3D481A98C841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

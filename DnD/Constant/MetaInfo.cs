@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DnD.Constant;
 
-internal class MetaInfo
+internal static class MetaInfo
 {
+    public const string OpenFithEditonApiUrl = "https://api.open5e.com/";
 }

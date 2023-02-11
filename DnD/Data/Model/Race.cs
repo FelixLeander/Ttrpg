@@ -43,7 +43,7 @@ public class Race
     public string? Size { get; set; }
 
     [JsonPropertyName("speed")]
-    public Speed Speed { get; set; }
+    public Speed Speed { get; set; } = new();
 
     [JsonPropertyName("speed_desc")]
     public string? SpeedDesc { get; set; }
@@ -68,12 +68,6 @@ public class Race
 
     [JsonPropertyName("document__license_url")]
     public string? DocumentLicenseUrl { get; set; }
-}
-
-public class Speed
-{
-    [JsonPropertyName("walk")]
-    public int Walk { get; set; }
 }
 
 public class Subrace

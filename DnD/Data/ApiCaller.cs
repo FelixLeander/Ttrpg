@@ -9,20 +9,22 @@ using DnD.Data.Model;
 using Newtonsoft.Json;
 using RestSharp;
 using System.Text.Json;
+using System.Reflection.Metadata.Ecma335;
+using DnD.Constant;
 
 namespace DnD.Data;
 
 public class ApiCaller
 {
     private RestClient RestClient { get; set; }
-    public ApiCaller(string baseUrl)
+    public ApiCaller()
     {
-        RestClient = new RestClient(baseUrl);
+        RestClient = new RestClient(MetaInfo.OpenFithEditonApiUrl);
         RestClient.AddDefaultParameter("format", "json");
         RestClient.AddDefaultParameter("limit", "0");
     }
 
-    public void GetAndSaveDataFromApi()
+    public string GetAndSaveDataFromApi()
     {
         var classes = new List<(Type, string)>
         {
@@ -53,6 +55,8 @@ public class ApiCaller
             method.MakeGenericMethod(type)
                 .Invoke(this, new[] { route });
         }
+
+        return Environment.CurrentDirectory;
     }
 
     private List<T> GetDataFromApi<T>(string route)

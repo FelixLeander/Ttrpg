@@ -5,13 +5,13 @@ namespace DnD.Data.Model;
 public class Speed
 {
     [JsonPropertyName("swim")]
-    public int Swim { get; set; }
+    public int? Swim { get; set; }
 
     [JsonPropertyName("burrow")]
-    public int Burrow { get; set; }
+    public int? Burrow { get; set; }
 
     [JsonPropertyName("walk")]
-    public int Walk { get; set; }
+    public int Walk { get; set; } = 0;
 
     [JsonPropertyName("hover")]
     public bool? Hover { get; set; }

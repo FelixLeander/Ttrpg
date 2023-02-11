@@ -9,8 +9,8 @@ namespace DnD.Model;
 
 public class Monster
 {
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public UnitSize Size { get; set; }
-    public string Tag { get; set; }
+    public string? Tag { get; set; }
 
 }

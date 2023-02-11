@@ -8,17 +8,10 @@ public class Program
     public static void Main()
     {
 
-        var apicaller = new ApiCaller(@"https://api.open5e.com/");
-        //apicaller.DownloadData();
+        var apicaller = new ApiCaller();
         apicaller.GetAndSaveDataFromApi();
 
-        /*
-        var baseUri = new Uri(@"https://api.open5e.com/");
-        var api = new OpenFiveApi(baseUri);
-
-        await api.DownloadFiles();
-        */
-
+        
         return;
 
         var campain = new Campain();
@@ -32,9 +25,6 @@ public class Program
              Name = "Mind Flaier",
              Description = "A octoface dude with psycic abilitys."
         });
-
-
-
 
         campain.DungeonMaster = userDm;
         campain.Players.Add(playerFelix);

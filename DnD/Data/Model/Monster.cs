@@ -113,13 +113,13 @@ public class Monster
     public List<Action> Actions { get; set; } = new();
 
     [JsonPropertyName("reactions")]
-    public object Reactions { get; set; }
+    public List<string> Reactions { get; set; } = new();
 
     [JsonPropertyName("legendary_desc")]
     public string? LegendaryDesc { get; set; }
 
     [JsonPropertyName("legendary_actions")]
-    public object LegendaryActions { get; set; }
+    public List<string> LegendaryActions { get; set; } = new();
 
     [JsonPropertyName("special_abilities")]
     public List<SpecialAbility?> SpecialAbilities { get; set; } = new();
